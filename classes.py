@@ -65,8 +65,33 @@ class Livro:
 
 class Biblioteca:
     def __init__(self):
-        self.__livros = []
-
+        self.__livros = [
+    Livro("1984", "George Orwell", 1949, "Distopia"),
+    Livro("O Senhor dos Anéis", "Tolkien", 1954, "Fantasia"),
+    Livro("Harry Potter e a Pedra Filosofal", "J.K. Rowling", 1997, "Fantasia"),
+    Livro("Dom Quixote", "Miguel de Cervantes", 1605, "Clássico"),
+    Livro("O Pequeno Príncipe", "Antoine de Saint-Exupéry", 1943, "Infantil"),
+    Livro("Moby Dick", "Herman Melville", 1851, "Aventura"),
+    Livro("Orgulho e Preconceito", "Jane Austen", 1813, "Romance"),
+    Livro("O Hobbit", "Tolkien", 1937, "Fantasia"),
+    Livro("O Código Da Vinci", "Dan Brown", 2003, "Suspense"),
+    Livro("A Revolução dos Bichos", "George Orwell", 1945, "Satírico"),
+    Livro("O Alquimista", "Paulo Coelho", 1988, "Ficção"),
+    Livro("Cem Anos de Solidão", "Gabriel García Márquez", 1967, "Realismo Mágico"),
+    Livro("O Morro dos Ventos Uivantes", "Emily Brontë", 1847, "Romance"),
+    Livro("O Grande Gatsby", "F. Scott Fitzgerald", 1925, "Romance"),
+    Livro("O Sol é Para Todos", "Harper Lee", 1960, "Romance"),
+    Livro("A Menina que Roubava Livros", "Markus Zusak", 2005, "Ficção"),
+    Livro("O Guia do Mochileiro das Galáxias", "Douglas Adams", 1979, "Ficção Científica"),
+    Livro("Alice no País das Maravilhas", "Lewis Carroll", 1865, "Infantil"),
+    Livro("Frankenstein", "Mary Shelley", 1818, "Terror"),
+    Livro("Drácula", "Bram Stoker", 1897, "Terror"),
+    Livro("O Perfume", "Patrick Süskind", 1985, "Suspense"),
+    Livro("A Cabana", "William P. Young", 2007, "Ficção"),
+    Livro("O Diário de Anne Frank", "Anne Frank", 1947, "Biografia"),
+    Livro("Jogos Vorazes", "Suzanne Collins", 2008, "Distopia"),
+    Livro("Crepúsculo", "Stephenie Meyer", 2005, "Romance")
+]
     # get
     def getLivros(self):
         return self.__livros
@@ -244,7 +269,7 @@ class Biblioteca:
     def excluir(self):
         titulo = input("Digite o título do livro que deseja excluir: ")
         for livro in self.__livros:
-            if livro.getTitulo() == titulo:
+            if livro.getTitulo().lower() == titulo.lower():
                 self.__livros.remove(livro)
                 print(f"O livro '{titulo}' foi removido com sucesso!")
                 time.sleep(2)
