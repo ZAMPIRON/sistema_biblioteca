@@ -13,7 +13,7 @@ while True:                   # criação do menu
     time.sleep(1)
 
     print("1- CADASTRO DE LIVRO \n2- EMPRESTAR LIVRO \n3- LISTAR \n4- ATUALIZAR \n5- EXCLUIR \n6- DEVOLVER \n0- SAIR")
-    time.sleep(1)
+    
 
     escolha = int(input("--> "))
     time.sleep(1)

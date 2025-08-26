@@ -77,7 +77,7 @@ class Biblioteca:
     
     # ---------------------------------metodos-------------------------------
     def cadastrar(self):
-        os.
+        os.system("cls")
         print("Você está na tela de cadastro de livro.\n")
         print("---------------------------------------------------------\n")
         qtd_livros = int(input("Quantos livros deseja cadastrar?\n-> "))
@@ -110,6 +110,7 @@ class Biblioteca:
     def qual_listar(self):
         while True:
             print("\nVocê está na tela de listar.\n")
+            print("---------------------------------------------------------\n")
             print("ESCOLHA UMA OPÇÃO: ")
             qual = int(input("1- LISTAR NORMALMENTE\n2- LISTAR POR CATEGORIA\n3- LISTAR POR AUTOR\n4- LISTAR POR EMPRESTADOS\n5- VOLTAR\n-> "))
             if qual == 1:
@@ -129,7 +130,9 @@ class Biblioteca:
     
     # -----------------------------------------------------------------------------------------
     def listar(self):
+        os.system("cls")
         print("Você está na tela listar.\n")
+        print("---------------------------------------------------------\n")
         if not self.__livros:
             print("Nenhum livro cadastrado")
             return
@@ -142,7 +145,9 @@ class Biblioteca:
         os.system("pause")
     # --------------------------------------------------------------------------------------------
     def listar_categoria(self):
+        os.system("cls")
         print("Você está na parte de listar por categoria.\n")
+        print("---------------------------------------------------------\n")
         categoria = input("DIGITE A CATEGORIA: ")
         lista_categoria = []
         for livro in self.__livros:
@@ -163,7 +168,9 @@ class Biblioteca:
         os.system("pause")
 
     def listar_autor(self):
+        os.system("cls")
         print("Você está na parte de listar por autor.\n")
+        print("---------------------------------------------------------\n")
         autor = input("DIGITE O AUTOR: ")
         lista_autor = []
         
@@ -184,7 +191,9 @@ class Biblioteca:
         os.system("pause")
 
     def listar_emprestados(self):
+        os.system("cls")
         print("Você está na parte de listar por emprestados.\n")
+        print("---------------------------------------------------------\n")
         lista_emprestados = []
         for livro in self.__livros:
             if livro.getDisponibilidade() == False:
