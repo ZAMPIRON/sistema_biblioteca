@@ -163,7 +163,10 @@ class Biblioteca:
             return
             
         for livro in self.__livros:
-            status = "Disponível" if livro.getDisponibilidade() else "Emprestado"
+            if livro.getDisponibilidade():
+                status = "Disponível"
+            else:
+                status = "Emprestado"
             print(f"{livro.getTitulo()} - {livro.getAutor()} ({livro.getAno()}) - {livro.getCategoria()} | [{status}]")
         
         print()
