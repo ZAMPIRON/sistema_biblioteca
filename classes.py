@@ -115,15 +115,15 @@ class Biblioteca:
             while True:
                 disponibilidade = input("DIGITE s/n PARA A DISPONIBILIDADE DO LIVRO: ").lower()
                 if disponibilidade == 's':
-                    t_ou_f = True
+                    truefalse = True
                     break
                 elif disponibilidade == 'n':
-                    t_ou_f = False
+                    truefalse = False
                     break
                 else:
                     print("DIGITE SOMENTE s OU n")
             livro = Livro(titulo, autor, ano, categoria)
-            livro.setDisponibilidade(t_ou_f)
+            livro.setDisponibilidade(truefalse)
             self.__livros.append(livro)
             print("---------------------------------------------------------\n")
             
