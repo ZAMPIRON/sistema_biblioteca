@@ -4,9 +4,9 @@ O objetivo é praticar programação orientada a objetos (POO) e manipulação d
 
 ## A aplicação foi estruturada em dois arquivos principais:
 
-app.py → responsável pelo menu interativo e pela interação com o usuário.
+[app.py](./app.py) - responsável pelo menu interativo e pela interação com o usuário.
 
-classes.py → contém as classes Livro e Biblioteca, responsáveis por toda a lógica do sistema.
+[classes.py](./classes.py) - contém as classes Livro e Biblioteca, responsáveis por toda a lógica do sistema.
 
 ## Como funciona?
 ### 1. Arquivo app.py
@@ -90,4 +90,4 @@ devolver_livro() - registra a devolução.
 
 
 ## Autores
-Projeto desenvolvido pelo G3 de desenvolvimentos de sistemas do SENAI.
+Projeto desenvolvido pelo G3 de desenvolvimentos de sistemas do SENAI usando o LiveShare.
