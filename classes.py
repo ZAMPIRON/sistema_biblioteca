@@ -204,8 +204,10 @@ class Biblioteca:
                 lista_autor.append(livro)
         
         if not lista_autor:
-            print(f"Nenhum livro encontrado com esse '{autor}'")
+            print(f"Nenhum livro encontrado o autor '{autor}'")
+            os.system("pause")
             return
+
             
         for livro in lista_autor:
             if livro.getDisponibilidade() == True:
